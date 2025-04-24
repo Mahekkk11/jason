@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55027628692",
+    "project_id": "studentdatab",
+    "storage_bucket": "studentdatab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55027628692:android:9846897491fadae0265281",
+        "android_client_info": {
+          "package_name": "com.jg.studentdatab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOIsfIK9qPPvbZKBfTGrDPppSgJ1c3omg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

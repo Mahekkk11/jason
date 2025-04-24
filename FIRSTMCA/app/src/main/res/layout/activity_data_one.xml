@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DataOneActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:background="@drawable/dr_edittext_border_black"
+        android:padding="10dp"
+        android:hint="Enter User Name"
+        android:textColor="@color/black"
+        android:layout_marginTop="150dp"
+        android:drawableStart="@drawable/icon_user"
+        android:drawablePadding="10dp"
+        android:textSize="20dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSendContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dr_edittext_border_black"
+        android:text="Send Content"
+        android:layout_marginTop="50dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

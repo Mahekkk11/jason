@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".DeliveryDetailsActivity">
+
+    <com.qor7.mpo.custom.CustomHeader
+        android:id="@+id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/txtFullname"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/full_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/txtContactNo"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/contact_no"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="number" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/txtEmail"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="textEmailAddress" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="2">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txtState"
+                    style="@style/EditTextParentStyle"
+                    android:hint="@string/state"
+                    android:imeOptions="actionNext"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:inputType="textPostalAddress" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txtCity"
+                    style="@style/EditTextParentStyle"
+                    android:hint="@string/city"
+                    android:imeOptions="actionNext"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:inputType="textPostalAddress" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="2">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txtPincode"
+                    style="@style/EditTextParentStyle"
+                    android:hint="@string/pincode"
+                    android:imeOptions="actionNext"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:inputType="number" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txtArea"
+                    style="@style/EditTextParentStyle"
+                    android:hint="@string/area"
+                    android:imeOptions="actionNext"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:inputType="textPostalAddress" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/txtAddress"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/address"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="textPostalAddress" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/txtLandmark"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/landmark"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="textPostalAddress" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnContinue"
+                style="@style/ButtonParentStyle"
+                android:text="@string/continue_"
+                android:layout_marginTop="@dimen/_50sdp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

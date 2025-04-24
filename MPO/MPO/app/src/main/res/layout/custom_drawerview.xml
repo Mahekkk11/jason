@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDrawerBack"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtUserName"
+                style="@style/Text16BoldBlackStyle"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:text="@string/hey" />
+
+            <View
+                style="@style/HorizontalViewGrayStyle"
+                android:layout_marginTop="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:id="@+id/btnHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:weightSum="9">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgHome"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_home"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_2sdp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text14RegularBlackStyle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@id/imgNext1"
+                    android:layout_toEndOf="@id/imgHome"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNext1"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_next"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnMyAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:weightSum="9">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_acc"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_2sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text14RegularBlackStyle"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/imgNext2"
+                    android:layout_toEndOf="@id/imgUser"
+                    android:text="@string/my_account" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNext2"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_next"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnMyOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:weightSum="9">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgOrder"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_order"
+                    android:padding="@dimen/_2sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text14RegularBlackStyle"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/imgNext3"
+                    android:layout_toEndOf="@id/imgOrder"
+                    android:text="@string/my_order" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNext3"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_next"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnMyWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:weightSum="9">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgWallet"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_wallet"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/_2sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text14RegularBlackStyle"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_toStartOf="@id/imgNext4"
+                    android:layout_toEndOf="@id/imgWallet"
+                    android:layout_centerVertical="true"
+                    android:text="@string/my_wallet" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNext4"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_next"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnAlerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:weightSum="9">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgAlert"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_alert"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_2sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text14RegularBlackStyle"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/imgNext5"
+                    android:layout_toEndOf="@id/imgAlert"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:text="@string/alerts" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNext5"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_next"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:weightSum="9">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNotification"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_notification"
+                    android:padding="@dimen/_2sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text14RegularBlackStyle"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/imgNext6"
+                    android:layout_toEndOf="@id/imgNotification"
+                    android:text="@string/notifications" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNext6"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_next"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:weightSum="9">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgService"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_service"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/_2sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text14RegularBlackStyle"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/imgNext7"
+                    android:layout_toEndOf="@id/imgService"
+                    android:text="@string/services" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNext7"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_next"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnChangePwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:weightSum="9">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgPwd"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_password"
+                        android:layout_alignParentStart="true"
+                        android:padding="@dimen/_2sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/Text14RegularBlackStyle"
+                        android:gravity="start"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/imgNext9"
+                        android:layout_toEndOf="@id/imgPwd"
+                        android:text="@string/change_password" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgNext9"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_next"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/_5sdp" />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:weightSum="9">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgLogout"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_logout"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/_2sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text14RegularBlackStyle"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/imgNext8"
+                    android:layout_toEndOf="@id/imgLogout"
+                    android:text="@string/log_out" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNext8"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_next"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

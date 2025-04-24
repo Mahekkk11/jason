@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--   <androidx.appcompat.widget.AppCompatTextView-->
+    <!--       android:layout_width="wrap_content"-->
+    <!--       android:layout_height="wrap_content"-->
+    <!--       android:text="Shared Preference"-->
+    <!--       android:textColor="@color/white"-->
+    <!--       android:textSize="30dp"-->
+    <!--       android:id="@+id/txtAnim"-->
+    <!--       android:textStyle="bold|italic"/>-->
+
+
+    <!--   <Button-->
+    <!--       android:layout_width="wrap_content"-->
+    <!--       android:layout_height="wrap_content"-->
+    <!--       android:text="button"-->
+    <!--       android:layout_marginTop="50dp"-->
+    <!--       android:id="@+id/btnClick"/>-->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" />
+    </androidx.core.widget.NestedScrollView>
+    <!--   <FrameLayout-->
+    <!--       xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--       android:id="@+id/fragment_container"-->
+    <!--       android:background="@color/white"-->
+    <!--       android:layout_width="match_parent"-->
+    <!--       android:layout_height="match_parent"-->
+    <!--       />-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

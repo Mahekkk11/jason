@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">MPO</string>
+
+
+    <!--OTP Activity-->
+    <string name="enter_your_details">Enter your details</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="we_sent_you_a_code_string">We sent you a verification code via SMS.</string>
+    <string name="we_will_send_a_text_to_verify_number">We will send a text to verify your number, No fees will apply</string>
+
+    <string name="top_offers">Offer / Combobs</string>
+    <string name="enter_your_mobile">Enter your Number</string>
+
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="verify_your_mobile">Verify your mobile</string>
+    <string name="offers_of_the_day">Offer of the Day</string>
+    <string name="start_by_creating_account">Start By Creating  An Account.</string>
+    <string name="im_earlier_bird_and_content">I\'m an early bird and I\'m a night \nowl so I\'m wise and I have \nworms.</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="signIn">Sign In</string>
+
+    <!--Navigation Drawer-->
+    <string name="submit">Submit</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="save">Save</string>
+
+    <string name="hey">Hello, %s</string>
+
+    <string name="home">Home</string>
+    <string name="my_account">My Account</string>
+    <string name="my_order">My Order</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="alerts">Alerts</string>
+    <string name="notifications">Notifications</string>
+    <string name="services">Services</string>
+    <string name="change_password">Change Password</string>
+    <string name="log_out">Log Out</string>
+
+    <string name="terms_and_condition_dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, \n\nwhen an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also \n\nthe leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem \n\n\&#9679; Lorem Ipsum is simply dummy text of the    printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, \n\n\&#9679; when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also \n\n\&#9679; the leap into electronic typesetting, remaining essentially unchanged. \n\n\&#9679; It was popularised in the 1960s with the release of Letraset sheets containing Lorem</string>
+
+    <string name="faq">FAQ\'s</string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="rate_app">Rate Our App</string>
+    <string name="invite">Invite</string>
+
+
+    <string name="email">Email</string>
+    <string name="sms">SMS</string>
+    <string name="whatsapp">WhatsApp</string>
+
+    <string name="indian_rupee">₹</string>
+    <string name="dummy_payment">15000.00</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="add_money">ADD MONEY</string>
+    <string name="monthly_puja_samagri">Monthly puja samagri</string>
+    <string name="customise_pack">Customise pack</string>
+
+
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</string>
+    <string name="add">ADD</string>
+    <string name="agiyaras_pack">Agiyaras pack</string>
+    <string name="rs_499">499</string>
+    <string name="rs_49">49</string>
+    <string name="checkout">checkout</string>
+    <string name="process_to_checkout">Proceed to checkout</string>
+    <string name="dummy_text_one">Lorem Ipsum is simply dummy text of the</string>
+    <string name="customise_this_pack">
+
+    <u>Customise this pack</u>
+    </string>
+
+    <string name="enter_your_location">Enter your location</string>
+    <string name="enter_pincode">Enter pincode</string>
+    <string name="your_city_is_not_in_list_click_here"><u>Your city is not in list? Click here</u></string>
+    <string name="select_city">Select city</string>
+    <string name="give_us_your_city_details_we_will_reach_there_soon">Give us your city details we will\nreach there soon</string>
+    <string name="explore_other_products">Explore other products</string>
+    <string name="we_will_notify_you_when_your_city_n_pincode_will_be_serviceable">We will notify you when your city/\n pincode will be serviceable</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--My Order Screen-->
+    <string name="my_orders">My orders</string>
+    <string name="normal_orders">Normal orders</string>
+    <string name="subscription_order">Subscription orders</string>
+    <string name="no_data_found">No data found</string>
+    <string name="diwali_pack_1">Diwali pack 1</string>
+    <string name="dummy_code">#1234567</string>
+    <string name="dummy_date">23, Sep 2021</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="dummy_price">₹150</string>
+
+    <!--OrderDetails Screen-->
+    <string name="item_total">Item Total</string>
+    <string name="deliver_charges">Deliver charges</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_number">Order number</string>
+    <string name="payment">Payment</string>
+    <string name="date">Date</string>
+    <string name="phone_number">Phone number</string>
+    <string name="deliver_to">Deliver to</string>
+    <string name="dummy_order_number">2312831231</string>
+    <string name="dummy_card_number">2312831231</string>
+    <string name="dummy_date_time">22 Nov 2020 at 1:21 PM</string>
+    <string name="dummy_phone">+91 83842 81283</string>
+    <string name="dummy_address">21, Aliak Sobar, Vastrapur, Ahmedabad 390022</string>
+    <string name="dummy_price_item">× ₹50 each</string>
+
+    <!--Footer-->
+    <string name="wallet">Wallet</string>
+    <string name="help">Help</string>
+    <string name="more">More</string>
+
+    <!--Dialog-->
+    <string name="puja_samagri_for">Puja samagri for</string>
+    <string name="puja_flowers_for">Puja flowers for</string>
+    <string name="festivals">Festivals</string>
+    <string name="occasions">Occasions</string>
+    <string name="full_name">Full name</string>
+    <string name="select_festival">Select Festival</string>
+    <string name="select_occasions">Select Occasions</string>
+    <string name="chat_bot">Chatbot</string>
+    <string name="search">Search</string>
+    <string name="shop_by_category">Shop by category</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <!--Festival Detail-->
+    <string name="available_packs">Available packs</string>
+    <string name="puja_samagri">Puja samagri</string>
+    <string name="diwali_pack">Diwali pack</string>
+    <string name="diwali_pack_details">Diwali pack details</string>
+    <string name="delivery_within_5_7_working_days_nor_select_your">Delivery within 5-7 working days\nor select your</string>
+    <string name="edit"><u>Edit</u></string>
+
+    <!--Delivery Details-->
+    <string name="enter_Delivery_details">Enter delivery details</string>
+    <string name="contact_no">Contact no.</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="area">Area</string>
+    <string name="address">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="continue_">Continue</string>
+    <string name="your_added_items">Your added items</string>
+    
+    <!--Payment Screen-->
+    <string name="payments">Payments</string>
+    <string name="suggested_for_you">Suggested for you</string>
+    <string name="cash">Cash</string>
+    <string name="card_net_banking">Card / Net banking</string>
+
+
+</resources>

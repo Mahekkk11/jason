@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="25dp"-->
+<!--        android:id="@+id/txtHeader"-->
+<!--        android:padding="10dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:text="Home"/>-->
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/fl"-->
+<!--        android:layout_below="@id/txtHeader"-->
+<!--        android:layout_above="@id/rlBottomView"/>-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rlBottomView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Home"-->
+<!--        android:id="@+id/btnHome"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toEndOf="@id/btnHome"-->
+<!--        android:text="Search"-->
+<!--        android:id="@+id/btnSearch"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Profile"-->
+<!--        android:layout_toEndOf="@id/btnSearch"-->
+<!--        android:id="@+id/btnProfile"/>-->
+<!--    </RelativeLayout>-->
+
+    <fragment
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_centerInParent="true"
+        android:id="@+id/mapView"
+        />
+
+</RelativeLayout>

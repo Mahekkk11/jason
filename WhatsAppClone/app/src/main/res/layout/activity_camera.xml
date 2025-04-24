@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".CameraActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:id="@+id/imgCapture"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Image"
+        android:layout_below="@id/imgCapture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnCaptureImage"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Data"
+        android:layout_below="@id/btnCaptureImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnCallData"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGetData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MCA"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/btnCallData"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

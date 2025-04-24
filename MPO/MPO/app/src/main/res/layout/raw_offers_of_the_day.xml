@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="@dimen/_180sdp"
+android:layout_height="@dimen/_180sdp"
+android:layout_marginStart="@dimen/_5sdp"
+android:layout_marginTop="@dimen/_4sdp"
+android:layout_marginEnd="@dimen/_3sdp"
+android:layout_marginBottom="@dimen/_4sdp"
+app:cardBackgroundColor="@color/colorWhite"
+app:cardCornerRadius="@dimen/_6sdp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageResource="@drawable/ic_flower_pack"
+        android:scaleType="fitXY"
+        app:roundedCornerRadius="@dimen/_6sdp"/>
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

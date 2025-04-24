@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+     <androidx.appcompat.widget.LinearLayoutCompat
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:paddingStart="10dp"
+         android:paddingEnd="10dp"
+         android:orientation="vertical">
+
+         <androidx.appcompat.widget.AppCompatEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="text"
+             android:imeOptions="actionNext"
+             android:background="@drawable/dr_edttext_border_black"
+             android:padding="10dp"
+             android:hint="Enter Username"
+             android:textColor="@color/black"
+             android:textSize="20dp"
+             android:layout_marginTop="50dp"/>
+
+         <androidx.appcompat.widget.AppCompatEditText
+             android:id="@+id/edtMobileNumber"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="number"
+             android:imeOptions="actionNext"
+             android:background="@drawable/dr_edttext_border_black"
+             android:padding="10dp"
+             android:hint="Enter Mobile Number"
+             android:textColor="@color/black"
+             android:textSize="20dp"
+             android:layout_marginTop="30dp"/>
+
+         <androidx.appcompat.widget.AppCompatEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textEmailAddress"
+             android:imeOptions="actionNext"
+             android:background="@drawable/dr_edttext_border_black"
+             android:padding="10dp"
+             android:hint="Enter Email"
+             android:textColor="@color/black"
+             android:textSize="20dp"
+             android:layout_marginTop="30dp"/>
+
+
+
+         <RadioGroup
+             android:id="@+id/rgGender"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_marginTop="30dp"
+             android:layout_height="wrap_content">
+
+             <RadioButton
+                 android:id="@+id/rbMale"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Male"
+                 android:textColor="@color/black"
+                 android:textSize="20dp"/>
+
+             <RadioButton
+                 android:id="@+id/rbFemale"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Female"
+                 android:layout_marginStart="50dp"
+                 android:textColor="@color/black"
+                 android:textSize="20dp"/>
+
+         </RadioGroup>
+
+         <androidx.appcompat.widget.AppCompatCheckBox
+             android:id="@+id/checkTermsCondition"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="@color/black"
+             android:textSize="17dp"
+             android:layout_marginTop="10dp"
+             android:text="Please Accept terms and Condition"/>
+
+         <androidx.appcompat.widget.AppCompatButton
+             android:id="@+id/btnSubmit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Submit"
+             android:visibility="gone"
+             android:layout_marginTop="50dp"
+             android:layout_gravity="center_horizontal"
+             android:textColor="@color/black"
+             android:background="@drawable/dr_edttext_border_black"
+             android:textSize="17dp"/>
+
+
+
+
+
+     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

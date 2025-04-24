@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment"
+    android:background="@color/colorWhite"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/EditTextParentStyle"
+                android:hint="@string/search"
+                android:drawableEnd="@drawable/ic_gray_search"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <LinearLayout
+                android:id="@+id/pageIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_minus7sdp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text12RegularBlackStyle"
+                android:text="@string/shop_by_category"
+                android:layout_marginTop="@dimen/_7sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkBlue"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_7sdp">
+                
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCustomer"
+                    style="@style/Text14RegularWhiteStyle"
+                    android:text="Our Happy Customer"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lblDescription"
+                    style="@style/Text12RegularWhiteStyle"
+                    android:text="@string/dummy_text"
+                    android:singleLine="false"
+                    android:layout_below="@+id/txtCustomer"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtUserName"
+                    style="@style/Text14RegularWhiteStyle"
+                    android:text="Dhruv Bajaj"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/lblDescription"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    app:actualImageResource="@drawable/img_user"
+                    app:roundAsCircle="true"
+                    android:layout_toStartOf="@+id/txtUserName"
+                    android:layout_alignParentBottom="true"
+                    app:roundingBorderWidth="@dimen/_1sdp"
+                    app:roundingBorderColor="@color/colorWhite"/>
+                
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text12RegularBlackStyle"
+                android:text="@string/top_offers"
+                android:layout_marginTop="@dimen/_7sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listTopOffers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text12RegularBlackStyle"
+                android:text="@string/offers_of_the_day"
+                android:layout_marginTop="@dimen/_7sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listOffersOfTheDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp" />
+
+
+            <!-- <com.facebook.drawee.view.SimpleDraweeView
+                 android:id="@+id/imgSlider"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_130sdp"
+                 app:actualImageResource="@drawable/splash"
+                 app:placeholderImage="@drawable/splash"
+                 android:scaleType="fitXY"
+                 android:layout_marginStart="@dimen/_5sdp"
+                 android:layout_marginEnd="@dimen/_5sdp"
+                 app:roundedCornerRadius="@dimen/_10sdp"/>-->
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

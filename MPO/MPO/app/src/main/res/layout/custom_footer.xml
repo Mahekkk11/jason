@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorLightGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_3sdp"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgHome"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_unselect_home"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtHome"
+                style="@style/Text10RegularGrayStyle"
+                android:gravity="center"
+                android:text="@string/home"
+                android:layout_marginTop="@dimen/_minus7sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgWallet"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_unselect_wallet" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtWallet"
+                style="@style/Text10RegularGrayStyle"
+                android:gravity="center"
+                android:text="@string/wallet"
+                android:layout_marginTop="@dimen/_minus7sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgHelp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_unselect_help"
+                android:visibility="visible"/>
+
+           <!-- <RelativeLayout
+                android:id="@+id/rlNotificationView"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNotification"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/img_notification_unselected" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtNotificationCount"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_alignEnd="@id/imgNotification"
+                    android:background="@drawable/dr_rounded_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"
+                    android:visibility="visible" />
+            </RelativeLayout>-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtHelp"
+                style="@style/Text10RegularGrayStyle"
+                android:gravity="center"
+                android:text="@string/help"
+                android:layout_marginTop="@dimen/_minus7sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgMore"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_unselect_more" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtMore"
+                style="@style/Text10RegularGrayStyle"
+                android:gravity="center"
+                android:text="@string/more"
+                android:layout_marginTop="@dimen/_minus7sdp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

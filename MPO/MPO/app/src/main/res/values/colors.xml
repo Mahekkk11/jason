@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorLightGray">#CDD4D9</color>
+    <color name="colorDarkBlue">#215589</color>
+    <color name="colorLightBlue">#24215589</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkGray">#FFCDCDCD</color>
+    <color name="trans_black">#CC000000</color>
+    <color name="colorStatusBarTransparent">@android:color/transparent</color>
+
+    <color name="colorLightGreen">#0DC429</color>
+    <color name="colorDarkRed">#C32020</color>
+    <color name="colorGrayBoarder">#EAEAEA</color>
+    <color name="colorDrawerBack">#FAFAFA</color>
+
+</resources>

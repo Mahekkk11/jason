@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".OrderDetailsActivity">
+
+    <com.qor7.mpo.custom.CustomHeader
+        android:id="@+id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customHeader"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listOrderDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text12RegularGrayStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@id/txtTotal"
+                    android:text="@string/item_total" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTotal"
+                    style="@style/Text12RegularBlackStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="₹450" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text12RegularGrayStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@id/txtDeliveryCharges"
+                    android:text="@string/deliver_charges" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDeliveryCharges"
+                    style="@style/Text12RegularBlackStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="₹50" />
+            </RelativeLayout>
+
+            <View
+                style="@style/HorizontalViewGrayStyle"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text12RegularGrayStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@id/txtGrandTotal"
+                    android:text="@string/grand_total" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtGrandTotal"
+                    style="@style/Text12BoldBlackStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="₹550" />
+            </RelativeLayout>
+
+            <View
+                style="@style/HorizontalViewGrayStyle"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_3sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text14RegularBlackStyle"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/order_details" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text12RegularGrayStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/order_number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtOrderNumber"
+                    style="@style/Text12RegularBlackStyle"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:text="@string/dummy_order_number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text12RegularGrayStyle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/payment" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPayment"
+                    style="@style/Text12RegularBlackStyle"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:text="@string/dummy_card_number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text12RegularGrayStyle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/date" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDate"
+                    style="@style/Text12RegularBlackStyle"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:text="@string/dummy_date_time" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text12RegularGrayStyle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/phone_number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPhoneNumber"
+                    style="@style/Text12RegularBlackStyle"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:text="@string/phone_number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text12RegularGrayStyle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/deliver_to" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDeliveryTo"
+                    style="@style/Text12RegularBlackStyle"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:text="@string/dummy_address" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

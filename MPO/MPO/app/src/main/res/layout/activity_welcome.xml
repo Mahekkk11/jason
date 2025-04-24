@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".WelcomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/logo"
+                android:padding="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text18BoldBlackStyle"
+                android:textSize="@dimen/_26sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:text="@string/start_by_creating_account"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:singleLine="false"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text15RegularGrayStyle"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text="@string/im_earlier_bird_and_content"
+                android:singleLine="false"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnCreateAccount"
+                style="@style/ButtonParentStyle"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text="@string/create_an_account" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bntSignIn"
+                style="@style/ButtonParentStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textColor="@color/colorDarkBlue"
+                android:background="@drawable/dr_rounded_border_blue_line"
+                android:text="@string/signIn" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

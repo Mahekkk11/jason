@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/padlock"/>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/llFirst"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toStartOf="@id/imgDelete"
+    android:layout_toEndOf="@id/imgProfile"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textSize="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtUserMsg"
+        android:layout_below="@id/txtUserName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="User Message"
+    android:textSize="20dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/delete_forever"/>
+
+</RelativeLayout>

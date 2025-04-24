@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="150dp"
+    android:layout_height="match_parent"
+    tools:context=".DataBaseDemo">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtName"
+        android:singleLine="true"
+        android:hint="enter name"
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPass"
+        android:layout_marginTop="30dp"
+        android:singleLine="true"
+        android:hint="enter pass"
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click here"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnClick"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click here"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnShow"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

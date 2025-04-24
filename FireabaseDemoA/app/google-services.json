@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "529457105838",
+    "project_id": "fireabasedemoa",
+    "storage_bucket": "fireabasedemoa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529457105838:android:e7b9ae3e521046124fd63f",
+        "android_client_info": {
+          "package_name": "com.jg.fireabasedemoa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg7avgvlf8N2NEuICGaT8YBfjBcLPr58g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

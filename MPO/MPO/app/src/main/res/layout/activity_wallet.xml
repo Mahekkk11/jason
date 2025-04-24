@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".WalletActivity">
+
+    <com.qor7.mpo.custom.CustomHeader
+        android:id="@+id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customHeader"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/dr_rounded_border_gray_line"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text16BoldGrayStyle"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_horizontal"
+                android:text="@string/total_balance"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_minus2sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text16BoldBlackStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="@dimen/_minus3sdp"
+                    android:layout_toStartOf="@+id/txtTotalAmount"
+                    android:text="@string/indian_rupee"
+                    android:textColor="@color/colorLightGreen" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTotalAmount"
+                    style="@style/Text22BoldBlackStyle"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/dummy_payment" />
+            </RelativeLayout>
+
+            <View
+                style="@style/HorizontalViewGrayStyle"
+                android:layout_marginTop="@dimen/_15sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text14BoldGrayStyle"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:gravity="center_horizontal"
+                android:text="@string/add_money"
+                android:textColor="@color/colorDarkBlue" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/listWallet"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

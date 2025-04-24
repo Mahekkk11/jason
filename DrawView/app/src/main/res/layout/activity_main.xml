@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--   <com.mihir.drawingcanvas.drawingView-->
+<!--       android:id="@+id/drawView"-->
+<!--       android:background="@color/white"-->
+<!--       android:layout_above="@id/llBottomView"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent"/>-->
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:id="@+id/edtNo"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:id="@+id/txtNo"/>
+
+   <LinearLayout
+       android:id="@+id/llBottomView"
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+      android:orientation="horizontal">
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:id="@+id/btnUndo"
+         android:text="undo"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnErase"
+          android:layout_marginStart="10dp"
+          android:text="erase"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:id="@+id/btnRedu"
+         android:text="Redu"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnColor"
+          android:layout_marginStart="10dp"
+          android:text="color"/>
+
+
+
+   </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Enter UserName"
+        android:textColor="@color/navyBlue"
+        android:background="@drawable/dr_rounded_edit_text"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:id="@+id/edtUname"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:padding="15dp"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        android:maxLength="10"
+        android:textColor="@color/navyBlue"
+        android:hint="Enter Mobile no"
+        android:imeOptions="actionNext"
+        android:background="@drawable/dr_rounded_edit_text"
+        android:id="@+id/edtMobile"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Enter Pass"
+        android:textColor="@color/navyBlue"
+        android:background="@drawable/dr_rounded_edit_text"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:id="@+id/edtPass"/>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:textColor="@color/white"
+        android:background="@drawable/dr_rounded_button"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnLogin"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/txtRegister"
+        />
+
+    
+</androidx.appcompat.widget.LinearLayoutCompat>

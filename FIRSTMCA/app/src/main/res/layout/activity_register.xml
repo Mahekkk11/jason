@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:imeOptions="actionNext"
+        android:background="@drawable/dr_edittext_border_black"
+        android:hint="Enter Username"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionNext"
+        android:background="@drawable/dr_edittext_border_black"
+        android:hint="Enter Mobile Number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionNext"
+        android:background="@drawable/dr_edittext_border_black"
+        android:hint="Enter Email"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionDone"
+        android:background="@drawable/dr_edittext_border_black"
+        android:hint="Enter Password"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/rbGender"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkTerms"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/terms_condition"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/dr_edittext_border_black"
+        android:textSize="17dp"
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MCA B </string>
+
+    <!--    LoginActivity-->
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">SignIn</string>
+
+
+    <!--    HomeActivity-->
+
+
+    <!--    forgotPassActivity-->
+
+</resources>

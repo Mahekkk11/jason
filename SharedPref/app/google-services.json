@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "28581090317",
+    "project_id": "sharedpref-66746",
+    "storage_bucket": "sharedpref-66746.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28581090317:android:fd03e08438f5fb926a3144",
+        "android_client_info": {
+          "package_name": "com.jg.sharedpref"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNDhPDq9rg8j4bKh4j3BhIflOL36U1Egg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

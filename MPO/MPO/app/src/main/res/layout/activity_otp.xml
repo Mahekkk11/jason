@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".OTPActivity">
+
+    <com.qor7.mpo.custom.CustomHeader
+        android:id="@+id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customHeader"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text18BoldBlackStyle"
+            android:text="@string/enter_verification_code" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lblExpireTime"
+            style="@style/Text12RegularGrayStyle"
+            android:text="@string/we_sent_you_a_code_string" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtNoOne"
+                    style="@style/EditTextParentStyle"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1" />
+
+                <View style="@style/HorizontalViewGrayStyle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtNoTwo"
+                    style="@style/EditTextParentStyle"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1" />
+
+                <View style="@style/HorizontalViewGrayStyle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtNoThree"
+                    style="@style/EditTextParentStyle"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1" />
+
+                <View style="@style/HorizontalViewGrayStyle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtNoFour"
+                    style="@style/EditTextParentStyle"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="1" />
+
+                <View style="@style/HorizontalViewGrayStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnSubmit"
+            style="@style/ButtonParentStyle"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="@string/submit" />
+
+
+        <!-- <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/btnContinue"
+             style="@style/ButtonParentStyle"
+             android:layout_marginTop="@dimen/_30sdp"
+             android:text="@string/continue_"/>
+
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/btnReSendCode"
+             style="@style/Text12MediumGrayStyle"
+             android:layout_marginTop="@dimen/_30sdp"
+             android:gravity="center"
+             android:text="@string/resend_code"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

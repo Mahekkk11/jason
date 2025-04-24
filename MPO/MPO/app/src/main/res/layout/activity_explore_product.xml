@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ExploreProductActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgRight"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/ic_right"
+        android:layout_centerInParent="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_below="@id/imgRight"
+        style="@style/Text12RegularBlueStyle"
+        android:text="@string/we_will_notify_you_when_your_city_n_pincode_will_be_serviceable"
+        android:singleLine="false"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnExploreOtherProduct"
+        style="@style/ButtonParentStyle"
+        android:text="@string/explore_other_products"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"/>
+
+
+</RelativeLayout>

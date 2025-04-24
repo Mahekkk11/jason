@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MyOrderActivity">
+
+    <com.qor7.mpo.custom.CustomHeader
+        android:id="@+id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customHeader"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/colorStatusBarTransparent"
+        android:visibility="visible"
+        app:tabIndicatorColor="@color/colorBlack"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicator="@drawable/tab_indicator"
+        app:tabIndicatorHeight="@dimen/_1sdp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorBlack"
+        app:tabTextAppearance="@style/customTabLayout"
+        app:tabTextColor="@color/colorBlack" />
+
+    <!-- <com.google.android.material.tabs.TabLayout
+             android:id="@+id/tabs"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/customHeader"
+             app:tabMode="fixed"
+             android:visibility="visible"
+             app:tabIndicatorFullWidth="true"
+             app:tabIndicatorHeight="@dimen/_2sdp"
+             app:tabIndicatorColor="@color/colorBlack"
+             app:tabBackground="@color/colorWhite"
+             android:background="@color/colorWhite"
+             android:layout_marginTop="@dimen/_3sdp"
+             app:tabTextAppearance="@style/customTabLayout"/>-->
+
+    <!--<View
+        android:layout_below="@+id/tabs"
+        android:layout_marginTop="@dimen/_minus1sdp"
+        style="@style/HorizontalGrayLineViewStyle" />-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:visibility="visible" />
+
+</RelativeLayout>
+
